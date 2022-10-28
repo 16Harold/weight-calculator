@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.836);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.section {
+  width: 35vw;
+  height: 45vh;
+  background-color: rgb(252, 221, 183);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 46, 250, 0.938) inset;
+  border-right: 5px solid rgba(0, 46, 250, 0.938);
+  border-bottom: 5px solid rgba(0, 46, 250, 0.938);
+}
+label {
+  color: white;
+  padding-top: 5px;
+ 
+}
+.weight-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  
+  
+}
+input {
+  padding: 10px 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(134, 134, 134, 0.938) inset;
+}
+
+form {
+  background-color: rgb(19, 19, 19);
+  width: 30vw;
+  height: 20vh;
+  border-radius: 20px 20px 0px 0;
+}
+.choose-btn {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+button {
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 4, 248, 0.89);
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  box-shadow: 10px 10px 20px rgb(252, 221, 183) inset;
+  border-right: 2px solid rgb(252, 221, 183);
+  border-bottom: 2px solid rgb(252, 221, 183);
+}
+button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+button:active {
+  background-color: rgb(252, 221, 183);
+  color: rgba(0, 4, 248, 0.89);
+}
+#display{
+  width: 270px;
+  background-color: rgb(252, 221, 183);
+  padding-top: 20px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.952);
+  box-shadow: 10px 10px 20px rgba(134, 134, 134, 0.938) inset;
+  border-right: 2px solid rgba(95, 95, 95, 0.938);
+  border-bottom: 2px solid rgba(95, 95, 95, 0.938);
+}
+.result {
+  height: 10vh;
+  width: 30vw;
+  background-color: rgba(0, 4, 248, 0.89);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 20px 20px;
+}
+@media (max-width: 660px) {
+  .section {
+    width: 100vw;
+    height: 60vh;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  form {
+  background-color: rgb(19, 19, 19);
+  width: 97vw;
+}
+.result {
+  margin-top: 10px;
+  width: 97vw;
+}
+}
