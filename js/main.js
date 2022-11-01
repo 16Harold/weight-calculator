@@ -19,7 +19,7 @@ function grams() {
 function pounds() {
   let Kilograms = document.getElementById("weightInput").value;
   const pounds = 2.20462;
-  const ans = Kilograms * pounds;
+  const ans = (Kilograms * pounds).toFixed(2);
 
   document.getElementById("display").innerHTML = ans;
   document.getElementById("displayUnit").innerHTML = "pounds";
